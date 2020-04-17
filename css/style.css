@@ -1,0 +1,19 @@
+/*Global*/
+:root {
+
+}
+h1,
+#description {
+
+  text-align: center;
+}
+
+body {
+  background-color: rgba(0, 172, 252, 0.274);
+}
+form {
+  margin: 5% 20% 5% 20%;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+/*Form*/

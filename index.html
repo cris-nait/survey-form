@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xiaomi Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Xiaomi Survey Form</h1>
+      <p id="description">
+        We are grateful for taking the time to help us improve our products.
+      </p>
+    </header>
+
+    <!--Form-->
+    <section>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email "
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What ocupation do you have?</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select current ocupation</option>
+            <option value="student">Student</option>
+            <option value="independent">Independent</option>
+            <option value="employee">Employee</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Xiaomi to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="ofCourse"
+              type="radio"
+              class="input-radio"
+              checked
+            />Of course yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="not"
+              type="radio"
+              class="input-radio"
+            />Absolutely not</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            What do you like most about our products?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="price"
+              type="checkbox"
+              class="input-checkbox"
+            />Price</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="designsd"
+              type="checkbox"
+              class="input-checkbox"
+            />Design</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="quality"
+              type="checkbox"
+              class="input-checkbox"
+            />Quality</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            Do you have any comments?
+          </p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment or suggestion here..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+
+    <!--Footer-->
+    <footer></footer>
+  </body>
+</html>
