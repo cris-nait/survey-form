@@ -1,0 +1,110 @@
+/*Global*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+:root {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin: auto auto 1% auto;
+  font-size: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: linear-gradient(
+      115deg,
+      rgba(255, 222, 212, 0.8),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Form*/
+
+form {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 3%;
+  background-color: rgba(255, 255, 255, 0.103);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.form-group > * {
+  padding: 1em 0px 1em 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group #dropdown,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+
+.form-group button {
+  width: 100%;
+  max-height: 150px;
+  margin-top: 2em;
+  padding: 10px auto 10px auto;
+  color: white;
+  border: none;
+  background: #fd4900;
+  border-radius: 3px;
+}
+
+.form-group button:hover,
+.form-group button:focus {
+  background: #b93501;
+  cursor: pointer;
+  transition: background-color 1s ease-out;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 50px auto 50px auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+footer a {
+  color: dodgerblue;
+  text-decoration: none;
+}
